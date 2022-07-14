@@ -1,10 +1,9 @@
 import React from "react";
+import resume from "/Users/natalie/Desktop/school_work/homework/react-bulgern-portfolio/src/images/NatalieBulger_Resume_June2022.pdf";
 
 export default function Footer() {
   const github = "https://github.com/nbulger1";
   const linkedin = "https://www.linkedin.com/in/natalie-bulger-6467b4b0/";
-  const resume =
-    "https://github.com/nbulger1/bulgern-portfolio/blob/main/assets/images/NatalieBulger_Resume_June2022.pdf";
 
   return (
     <div className="container">
