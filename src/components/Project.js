@@ -14,6 +14,7 @@ export default function Project(props) {
             <figure className="card-1">
               <div className="card-text-1">
                 <h2 className="card-header">{item.title}</h2>
+                <img className="project-image" src={item.project_image}></img>
                 <a
                   className="card-body-link"
                   href={item.deployed_link}

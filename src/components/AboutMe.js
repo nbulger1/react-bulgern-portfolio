@@ -1,10 +1,6 @@
 import React, { useState } from "react";
-
-const profilePic =
-  "/Users/natalie/Desktop/school_work/homework/react-bulgern-portfolio/src/images/BulgerN_VTech Photo.jpg";
-
-const banderaPano =
-  "/Users/natalie/Desktop/school_work/homework/react-bulgern-portfolio/src/images/bandera_pano.jpeg";
+import profilePic from "/Users/natalie/Desktop/school_work/homework/react-bulgern-portfolio/src/images/BulgerN_VTech Photo.jpg";
+import banderaPano from "/Users/natalie/Desktop/school_work/homework/react-bulgern-portfolio/src/images/bandera_pano.jpeg";
 
 export default function AboutMe() {
   return (
