@@ -35,8 +35,8 @@ const projects = [
   },
   {
     id: 5,
-    title: codeQuiz,
-    project_image: "./images/code_quiz.png",
+    title: "Code Quiz",
+    project_image: codeQuiz,
     deployed_link: "https://nbulger1.github.io/code-quiz/",
     git_link: "https://github.com/nbulger1/code-quiz.git",
   },

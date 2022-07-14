@@ -9,10 +9,13 @@ export default function Navigation() {
             <a href="#about-me">About Me</a>
           </li>
           <li>
-            <a href="#work">Work</a>
+            <a href="#work">Portfolio</a>
           </li>
           <li>
             <a href="#contact-me">Contact Me</a>
+          </li>
+          <li>
+            <a href="#contact-me">Resume</a>
           </li>
         </ul>
       </nav>
