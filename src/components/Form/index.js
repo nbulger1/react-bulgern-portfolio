@@ -6,10 +6,8 @@ import { validateEmail } from "../../utils/helpers";
 
 function Form() {
   // Create state variables for the fields in the form
-  // We are also setting their initial values to an empty string
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
-  // TODO: Create a password variable and a function "setPassword" using useState
   const [message, setMessage] = useState("");
 
   const [errorMessage, setErrorMessage] = useState("");
@@ -20,9 +18,7 @@ function Form() {
     const inputType = target.name;
     const inputValue = target.value;
 
-    // Based on the input type, we set the state of either email, username, and password
-    // TODO: Add an else statement to the end that will set the password to the value of 'inputValue'
-
+    // Based on the input type, we set the state of either name, email, and message
     if (inputType === "name") {
       setName(inputValue);
     } else if (inputType === "email") {
@@ -33,28 +29,29 @@ function Form() {
   };
 
   const handleFormSubmit = (e) => {
-    // Preventing the default behavior of the form submit (which is to refresh the page)
+    // Preventing the default behavior of the form submit
     e.preventDefault();
 
-    // First we check to see if the email is not valid or if the userName is empty. If so we set an error message to be displayed on the page.
+    // First we check to see if the email is not valid. If so we set an error message to be displayed on the page.
     if (!validateEmail(email)) {
-      setErrorMessage("Email is invalid");
+      setErrorMessage("Please enter a valid email");
       // We want to exit out of this code block if something is wrong so that the user can correct it
       return;
-      // Then we check to see if the password is not valid. If so, we set an error message regarding the password.
     }
 
+    // Then we check to see if the name is filled out, if not we send an error message to enter a name
     if (!name) {
       setErrorMessage("Please enter a name");
       return;
     }
 
+    // Then we check to see if the message is filled out, if not we send an error message to enter a message
     if (!message) {
       setErrorMessage("Please enter a message");
       return;
     }
 
-    // If successful, we want to clear out the input after registration.
+    // If successful, clear out the input values
     setName("");
     setEmail("");
     setMessage("");
@@ -63,7 +60,7 @@ function Form() {
 
   return (
     <div>
-      <p>Hello {name}</p>
+      <p>Contact Me!</p>
       <form className="form">
         <input
           value={name}
