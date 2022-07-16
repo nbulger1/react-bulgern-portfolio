@@ -1,22 +1,26 @@
 import React, { useState } from "react";
 import profilePic from "/Users/natalie/Desktop/school_work/homework/react-bulgern-portfolio/src/images/BulgerN_VTech Photo.jpg";
-import banderaPano from "/Users/natalie/Desktop/school_work/homework/react-bulgern-portfolio/src/images/bandera_pano.jpeg";
+
+const styles = {
+  profilePhoto: {
+    backgroundColor: "var(--beigegreen)",
+    maxWidth: "200vw",
+    padding: "5px",
+    height: "200px",
+    border: "1px solid var(--darkgreen)",
+  },
+};
 
 export default function AboutMe() {
   return (
     <div className="container">
-      <img
-        src={banderaPano}
-        alt="Panorama of Bandera Mountain Hike in Washington State with a women sitting in the center wearing all black and looking out at the view. There is a lake on the right and a valley on the left"
-        className="bandera"
-      ></img>
       <article className="about-me" id="about-me">
         <aside>
           <h1>About Me</h1>
           <img
             src={profilePic}
             alt="Profile Photo of Natalie standing in front of Harborview Medical Center in Seattle Washington wearing a blank turtleneck and pink/black flowered skirt"
-            className="profile-photo"
+            style={styles.profilePhoto}
           ></img>
         </aside>
         <section>

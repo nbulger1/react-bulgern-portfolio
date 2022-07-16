@@ -1,3 +1,4 @@
+/* declaring color palette for the entire application */
 :root {
   --darkgreen: #1E3125;
   --beigegreen: #8E8F82;
@@ -20,24 +21,4 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}
-
-.profile-photo {
-  background-color: var(--beigegreen);
-  max-width: 200vw;
-  padding: 5px;
-  height: 200px;
-  border: 1px solid var(--darkgreen);
-}
-
-.project-image {
-  background-color: var(--beigegreen);
-  max-width: 200vw;
-  padding: 5px;
-  height: 200px;
-  border: 1px solid var(--darkgreen);
-}
-
-.bandera {
-  width: 100%;
 }

@@ -1,5 +1,15 @@
 import React, { useState } from "react";
 
+const styles = {
+  projectImage: {
+    backgroundColor: "var(--beigegreen)",
+    maxWidth: "200vw",
+    padding: "5px",
+    height: "200px",
+    border: "1px solid var(--darkgreen)",
+  },
+};
+
 export default function Project(props) {
   return (
     <div className="container">
@@ -14,7 +24,11 @@ export default function Project(props) {
             <figure className="card-1">
               <div className="card-text-1">
                 <h2 className="card-header">{item.title}</h2>
-                <img className="project-image" src={item.project_image}></img>
+                <img
+                  className="project-image"
+                  style={styles.projectImage}
+                  src={item.project_image}
+                ></img>
                 <a
                   className="card-body-link"
                   href={item.deployed_link}
