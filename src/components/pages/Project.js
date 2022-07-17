@@ -2,28 +2,38 @@ import React, { useState } from "react";
 
 const styles = {
   projectImage: {
-    backgroundColor: "var(--beigegreen)",
-    maxWidth: "200vw",
+    width: "300px",
     padding: "5px",
-    height: "200px",
-    border: "1px solid var(--darkgreen)",
+    height: "300px",
+    objectFit: "cover",
+  },
+
+  work: {
+    // display: "grid",
+    // gridTemplateColumns: "2fr 3fr 3fr",
+    // gridTemplateRows: "150px",
+    // gap: "10px",
+    // gridAutoRows: "minmax(75px, auto)",
+    width: "100%",
+    alignItems: "center",
+    color: "white",
+  },
+
+  workLink: {
+    color: "white",
+    display: "block",
   },
 };
 
 export default function Project(props) {
   return (
     <div className="container">
-      <article className="work" id="work">
-        <section className="card-column-header">
-          <figure>
-            <h2 className="card-header">Work</h2>
-          </figure>
-        </section>
+      <article className="work" id="work" style={styles.work}>
         {props.projects.map((item) => (
-          <section className="card-column-1" key={item.id}>
-            <figure className="card-1">
-              <div className="card-text-1">
-                <h2 className="card-header">{item.title}</h2>
+          <section key={item.id}>
+            <figure>
+              <div className="card-text">
+                <h3 className="card-header">{item.title}</h3>
                 <img
                   className="project-image"
                   style={styles.projectImage}
@@ -34,6 +44,7 @@ export default function Project(props) {
                   href={item.deployed_link}
                   target="_blank"
                   rel="noreferrer"
+                  style={styles.workLink}
                 >
                   Link to Deployed Project
                 </a>
@@ -42,6 +53,7 @@ export default function Project(props) {
                   href={item.git_link}
                   target="_blank"
                   rel="noreferrer"
+                  style={styles.workLink}
                 >
                   Link to Github Repository
                 </a>

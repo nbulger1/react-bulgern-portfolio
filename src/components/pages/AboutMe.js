@@ -3,27 +3,46 @@ import profilePic from "/Users/natalie/Desktop/school_work/homework/react-bulger
 
 const styles = {
   profilePhoto: {
-    backgroundColor: "var(--beigegreen)",
-    maxWidth: "200vw",
+    maxWidth: "300vw",
     padding: "5px",
-    height: "200px",
-    border: "1px solid var(--darkgreen)",
+    height: "300px",
+  },
+
+  aboutMe: {
+    display: "flex",
+    flexWrap: "wrap",
+  },
+
+  aboutMeAside: {
+    flex: 1,
+    borderRightColor: "black",
+    borderRightWidth: "2px",
+    borderRightStyle: "solid",
+    fontSize: "20px",
+    justifyContent: "center",
+    alignItems: "center",
+  },
+
+  aboutMeSection: {
+    flex: 3,
+    color: "white",
+    padding: "20px",
+    fontSize: "16px",
   },
 };
 
 export default function AboutMe() {
   return (
     <div className="container">
-      <article className="about-me" id="about-me">
-        <aside>
-          <h1>About Me</h1>
+      <article className="about-me" style={styles.aboutMe}>
+        <aside style={styles.aboutMeAside}>
           <img
             src={profilePic}
             alt="Profile Photo of Natalie standing in front of Harborview Medical Center in Seattle Washington wearing a blank turtleneck and pink/black flowered skirt"
             style={styles.profilePhoto}
           ></img>
         </aside>
-        <section>
+        <section style={styles.aboutMeSection}>
           <p>
             Hello! My name is Natalie Bulger. I currently live in Kirkland, WA.
             I am the Head Fitness Coach at Orangetheory Fitness in Mercer

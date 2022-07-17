@@ -59,8 +59,7 @@ function Form() {
   };
 
   return (
-    <div>
-      <p>Contact Me!</p>
+    <div className="form-container">
       <form className="form">
         <input
           value={name}
@@ -82,6 +81,7 @@ function Form() {
           onChange={handleInputChange}
           type="text"
           placeholder="message"
+          className="message-box"
         />
         <button type="button" onClick={handleFormSubmit}>
           Submit
