@@ -61,29 +61,32 @@ function Form() {
   return (
     <div className="form-container">
       <form className="form">
+        <p>Name</p>
         <input
           value={name}
           name="name"
           onChange={handleInputChange}
           type="text"
-          placeholder="name"
+          placeholder="Enter Full Name"
         />
+        <p>Email</p>
         <input
           value={email}
           name="email"
           onChange={handleInputChange}
           type="text"
-          placeholder="email"
+          placeholder="Enter Valid Email Address"
         />
+        <p>Message</p>
         <input
           value={message}
           name="message"
           onChange={handleInputChange}
           type="text"
-          placeholder="message"
+          placeholder="Enter a Message"
           className="message-box"
         />
-        <button type="button" onClick={handleFormSubmit}>
+        <button type="button" class="submit-button" onClick={handleFormSubmit}>
           Submit
         </button>
       </form>

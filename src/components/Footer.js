@@ -3,9 +3,10 @@ import resume from "/Users/natalie/Desktop/school_work/homework/react-bulgern-po
 
 const styles = {
   contactHeader: {
-    color: "white",
+    color: "black",
     display: "flex",
     justifyContent: "center",
+    margin: "10px",
   },
 
   contactNavList: {
@@ -16,10 +17,19 @@ const styles = {
   },
 
   contactLink: {
-    color: "white",
+    color: "black",
     pointer: "cursor",
     textDecoration: "none",
     fontSize: "18px",
+  },
+
+  footer: {
+    position: "absolute",
+    bottom: 0,
+    minWidth: "100%",
+    maxWidth: "100%",
+    height: "100px",
+    backgroundColor: "var(--beigeblue)",
   },
 };
 
@@ -28,7 +38,7 @@ export default function Footer() {
   const linkedin = "https://www.linkedin.com/in/natalie-bulger-6467b4b0/";
 
   return (
-    <div className="container">
+    <div className="container" style={styles.footer}>
       <footer className="more-info" id="more-info">
         <h3 style={styles.contactHeader}>More Information</h3>
         <nav className="contact-nav">

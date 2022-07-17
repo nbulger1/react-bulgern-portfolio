@@ -7,7 +7,7 @@ const styles = {
     color: "black",
   },
   navbar: {
-    backgroundColor: "#A6ADB5",
+    backgroundColor: "var(--beigeblue)",
   },
   navLink: {
     color: "black",
