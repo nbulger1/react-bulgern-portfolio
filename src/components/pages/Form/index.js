@@ -86,7 +86,11 @@ function Form() {
           placeholder="Enter a Message"
           className="message-box"
         />
-        <button type="button" class="submit-button" onClick={handleFormSubmit}>
+        <button
+          type="button"
+          className="submit-button"
+          onClick={handleFormSubmit}
+        >
           Submit
         </button>
       </form>

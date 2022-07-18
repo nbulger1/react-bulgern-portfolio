@@ -24,6 +24,7 @@ const styles = {
     color: "white",
     padding: "20px",
     fontSize: "16px",
+    overflow: "scroll",
   },
 };
 
