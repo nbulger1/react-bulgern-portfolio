@@ -24,7 +24,7 @@ const styles = {
   },
 
   footer: {
-    position: "absolute",
+    position: "fixed",
     bottom: 0,
     minWidth: "100%",
     maxWidth: "100%",

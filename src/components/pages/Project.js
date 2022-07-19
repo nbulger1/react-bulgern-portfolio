@@ -9,14 +9,12 @@ const styles = {
     borderRadius: "25px",
   },
   work: {
-    display: "grid",
-    gridTemplateColumns: "2fr 2fr 2fr",
-    gridTemplateRows: "auto",
+    display: "flex",
+    flexWrap: "wrap",
+    margin: "20px",
     gap: "10px",
-    gridAutoRows: "minmax(max-content, 2fr)",
-    width: "100%",
-    color: "black",
-    marginTop: "20px",
+    justifyContent: "center",
+    alignItems: "center",
   },
 
   workLink: {
@@ -25,9 +23,10 @@ const styles = {
   },
 
   cardFormat: {
-    backgroundColor: "var(--offwhite)",
+    backgroundColor: "var(--beigeblue)",
     borderRadius: "25px",
     textAlign: "center",
+    padding: "5px",
   },
 };
 
