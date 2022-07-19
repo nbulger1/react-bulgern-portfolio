@@ -68,6 +68,7 @@ function Form() {
           onChange={handleInputChange}
           type="text"
           placeholder="Enter Full Name"
+          className="name-box"
         />
         <p>Email</p>
         <input
@@ -76,6 +77,7 @@ function Form() {
           onChange={handleInputChange}
           type="text"
           placeholder="Enter Valid Email Address"
+          className="email-box"
         />
         <p>Message</p>
         <input
