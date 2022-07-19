@@ -16,11 +16,10 @@ const styles = {
   },
 
   aboutMeAside: {
-    flex: 1,
+    marginTop: "10px",
   },
 
   aboutMeSection: {
-    flex: 3,
     color: "white",
     padding: "20px",
     fontSize: "16px",

@@ -6,7 +6,7 @@ import Footer from "./components/Footer";
 const styles = {
   fullApp: {
     backgroundColor: "#1E3125",
-    height: "100vh",
+    minHeight: "100vh",
   },
 };
 
