@@ -50,7 +50,19 @@ function NavTabs({ currentPage, handlePageChange }) {
             }
             style={styles.navLink}
           >
-            Projects
+            Portfolio
+          </a>
+        </li>
+        <li className="nav-item">
+          <a
+            href="#resume"
+            onClick={() => handlePageChange("Resume")}
+            className={
+              currentPage === "Resume" ? "nav-link active" : "nav-link"
+            }
+            style={styles.navLink}
+          >
+            Resume
           </a>
         </li>
         <li className="nav-item">

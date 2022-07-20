@@ -3,6 +3,7 @@ import myRecipes from "./images/my_recipes.png";
 import profileGen from "./images/team_profile.png";
 import weatherDash from "./images/weather_dashboard.png";
 import codeQuiz from "./images/code_quiz.png";
+import textEditor from "./images/text_editor_pwa.png";
 
 const projects = [
   {
@@ -39,6 +40,13 @@ const projects = [
     project_image: codeQuiz,
     deployed_link: "https://nbulger1.github.io/code-quiz/",
     git_link: "https://github.com/nbulger1/code-quiz.git",
+  },
+  {
+    id: 6,
+    title: "Text Editor PWA",
+    project_image: textEditor,
+    deployed_link: "https://text-editor-pwa-bulger.herokuapp.com/",
+    git_link: "https://github.com/nbulger1/text-editor-pwa.git",
   },
 ];
 
