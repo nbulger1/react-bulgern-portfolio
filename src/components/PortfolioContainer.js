@@ -9,7 +9,7 @@ import projects from "../projects";
 import proficiencies from "../proficiences";
 
 export default function PortfolioContainer() {
-  const [currentPage, setCurrentPage] = useState("Home");
+  const [currentPage, setCurrentPage] = useState("AboutMe");
 
   // TODO: Add a comment describing the functionality of this method
   // create a render page function that checkes for the currentPage variable --> if it is equal to a certain value then return that page
