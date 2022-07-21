@@ -10,7 +10,9 @@ function Form() {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
-  const [errorMessage, setErrorMessage] = useState("");
+  const [errorMessageName, setErrorMessageName] = useState("");
+  const [errorMessageEmail, setErrorMessageEmail] = useState("");
+  const [errorMessageMessage, setErrorMessageMessage] = useState("");
 
   const handleInputChange = (e) => {
     // Getting the value and name of the input which triggered the change
@@ -28,26 +30,62 @@ function Form() {
     }
   };
 
+  const handleEmailError = (e) => {
+    if (!validateEmail(email)) {
+      setErrorMessageEmail("Please enter a valid email");
+      // We want to exit out of this code block if something is wrong so that the user can correct it
+      return;
+    }
+  };
+
+  const handleNameError = (e) => {
+    // Then we check to see if the name is filled out, if not we send an error message to enter a name
+    if (!name) {
+      setErrorMessageName("Please enter a name");
+      return;
+    }
+  };
+
+  const handleMessageError = (e) => {
+    // Then we check to see if the message is filled out, if not we send an error message to enter a message
+    if (!message) {
+      setErrorMessageMessage("Please enter a message");
+      return;
+    }
+  };
+
+  const handleKeyPressName = (event) => {
+    setErrorMessageName("");
+  };
+
+  const handleKeyPressEmail = (event) => {
+    setErrorMessageEmail("");
+  };
+
+  const handleKeyPressMessage = (event) => {
+    setErrorMessageMessage("");
+  };
+
   const handleFormSubmit = (e) => {
     // Preventing the default behavior of the form submit
     e.preventDefault();
 
     // First we check to see if the email is not valid. If so we set an error message to be displayed on the page.
     if (!validateEmail(email)) {
-      setErrorMessage("Please enter a valid email");
+      setErrorMessageEmail("Please enter a valid email");
       // We want to exit out of this code block if something is wrong so that the user can correct it
       return;
     }
 
     // Then we check to see if the name is filled out, if not we send an error message to enter a name
     if (!name) {
-      setErrorMessage("Please enter a name");
+      setErrorMessageName("Please enter a name");
       return;
     }
 
     // Then we check to see if the message is filled out, if not we send an error message to enter a message
     if (!message) {
-      setErrorMessage("Please enter a message");
+      setErrorMessageMessage("Please enter a message");
       return;
     }
 
@@ -55,6 +93,9 @@ function Form() {
     setName("");
     setEmail("");
     setMessage("");
+    setErrorMessageName("");
+    setErrorMessageEmail("");
+    setErrorMessageMessage("");
     alert(`Thank you for your message! Natalie will get back to you soon!`);
   };
 
@@ -69,7 +110,11 @@ function Form() {
           type="text"
           placeholder="Enter Full Name"
           className="name-box"
+          required=""
+          onBlur={handleNameError}
+          onKeyDown={handleKeyPressName}
         />
+        <p className="error-text">{errorMessageName}</p>
         <p>Email</p>
         <input
           value={email}
@@ -78,7 +123,11 @@ function Form() {
           type="text"
           placeholder="Enter Valid Email Address"
           className="email-box"
+          required=""
+          onBlur={handleEmailError}
+          onKeyDown={handleKeyPressEmail}
         />
+        <p className="error-text">{errorMessageEmail}</p>
         <p>Message</p>
         <input
           value={message}
@@ -87,7 +136,11 @@ function Form() {
           type="text"
           placeholder="Enter a Message"
           className="message-box"
+          required=""
+          onBlur={handleMessageError}
+          onKeyDown={handleKeyPressMessage}
         />
+        <p className="error-text">{errorMessageMessage}</p>
         <button
           type="button"
           className="submit-button"
@@ -96,11 +149,11 @@ function Form() {
           Submit
         </button>
       </form>
-      {errorMessage && (
+      {/* {errorMessage && (
         <div>
           <p className="error-text">{errorMessage}</p>
         </div>
-      )}
+      )} */}
     </div>
   );
 }

@@ -55,7 +55,33 @@ THEN I am presented with text or icon links to the developer’s GitHub and Link
 
 ## Components
 
+I used `create-react-app` to build this portfolio with at the following components:
+
+- A single `Header` component that appears on multiple pages
+
+- A single `NavTabs` component within the header that will be used to conditionally render the different sections of your portfolio
+
+- A single `Project` component that will be used multiple times in the Portfolio section using a `projects` file as props
+
+- A single `Footer` component that appears on multiple pages
+
+I also added in the following components:
+
+- A single `Resume` component that used a `proficiencies` file as props
+
+- A single `Form` component for a contact me section
+
+- A single `AboutMe` component that also became the default when loading the portfolio
+
+- A single `PortfolioContainer` to integret all of the pages and feed them to the `NavTabs` component for conditional rendering
+
 ## Styling
+
+All of the CSS styling was done within the individual component Javascript files aside from the `Form` component as it was sitting in it's own folder. I also did some full application styling within the `App.js` file to hold the footer at the bottom of the page. Finally I defined my application color scheme in the general `index.css` file as `:root` variables.
+
+- The color scheme was determined by loading the `Home` page panorama into `coolors.co` and picking out a dark green as the base. I also loaded the profile photo from the `About Me` page into the `coolors.co` and conveniently found that the color palette presented was very similar to the one determined by the panorma.
+
+I plan to add some animations and further styling as I work on developing the portfolio in the coming weeks.
 
 ## License
 

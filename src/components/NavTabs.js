@@ -17,7 +17,7 @@ const styles = {
 function NavTabs({ currentPage, handlePageChange }) {
   return (
     <div style={styles.navbar}>
-      <h1 style={styles.headerH1}>Bulger</h1>
+      <h1 style={styles.headerH1}>Natalie Bulger</h1>
       <ul className="nav nav-tabs">
         <li className="nav-item">
           <a
