@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/react-bulgern-portfolio/static/css/main.4812039d.css",
+    "main.js": "/react-bulgern-portfolio/static/js/main.9023e26d.js",
+    "static/js/787.efdb83c2.chunk.js": "/react-bulgern-portfolio/static/js/787.efdb83c2.chunk.js",
+    "static/media/bens_diner.png": "/react-bulgern-portfolio/static/media/bens_diner.244159200adde2fdef66.png",
+    "static/media/weather_dashboard.png": "/react-bulgern-portfolio/static/media/weather_dashboard.99bace725d9f5d70056d.png",
+    "static/media/my_recipes.png": "/react-bulgern-portfolio/static/media/my_recipes.efe59cc3b0343e06dc34.png",
+    "static/media/resume_screenshot.png": "/react-bulgern-portfolio/static/media/resume_screenshot.853b2f7e5646cbc7e547.png",
+    "static/media/bandera_pano.jpeg": "/react-bulgern-portfolio/static/media/bandera_pano.a797b8508bcb39140a76.jpeg",
+    "static/media/BulgerN_VTech Photo.jpg": "/react-bulgern-portfolio/static/media/BulgerN_VTech Photo.3f1867fc17fbd3972ab0.jpg",
+    "static/media/code_quiz.png": "/react-bulgern-portfolio/static/media/code_quiz.ed6ba23e87ba29feece3.png",
+    "static/media/text_editor_pwa.png": "/react-bulgern-portfolio/static/media/text_editor_pwa.5c54c4eea6e1e7e1652c.png",
+    "static/media/NatalieBulger_Resume.pdf": "/react-bulgern-portfolio/static/media/NatalieBulger_Resume.6a0f327efcf09f73aa6d.pdf",
+    "static/media/team_profile.png": "/react-bulgern-portfolio/static/media/team_profile.a7e20c1c07b706808de5.png",
+    "index.html": "/react-bulgern-portfolio/index.html",
+    "main.4812039d.css.map": "/react-bulgern-portfolio/static/css/main.4812039d.css.map",
+    "main.9023e26d.js.map": "/react-bulgern-portfolio/static/js/main.9023e26d.js.map",
+    "787.efdb83c2.chunk.js.map": "/react-bulgern-portfolio/static/js/787.efdb83c2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4812039d.css",
+    "static/js/main.9023e26d.js"
+  ]
+}
