@@ -92,3 +92,5 @@ This project is protected under the MIT License.
 ## Link
 
 See following for a link to my deployed application: https://nbulger1.github.io/react-bulgern-portfolio/
+
+![GIF demonstrating functionality of the react portfolio - including responsive design](./src/images/react-demo.gif)
