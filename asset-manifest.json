@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-bulgern-portfolio/static/css/main.4797540d.css",
-    "main.js": "/react-bulgern-portfolio/static/js/main.94fc90d2.js",
+    "main.js": "/react-bulgern-portfolio/static/js/main.cf18d49c.js",
     "static/js/787.efdb83c2.chunk.js": "/react-bulgern-portfolio/static/js/787.efdb83c2.chunk.js",
     "static/media/bens_diner.png": "/react-bulgern-portfolio/static/media/bens_diner.244159200adde2fdef66.png",
     "static/media/weather_dashboard.png": "/react-bulgern-portfolio/static/media/weather_dashboard.99bace725d9f5d70056d.png",
@@ -15,11 +15,11 @@
     "static/media/team_profile.png": "/react-bulgern-portfolio/static/media/team_profile.a7e20c1c07b706808de5.png",
     "index.html": "/react-bulgern-portfolio/index.html",
     "main.4797540d.css.map": "/react-bulgern-portfolio/static/css/main.4797540d.css.map",
-    "main.94fc90d2.js.map": "/react-bulgern-portfolio/static/js/main.94fc90d2.js.map",
+    "main.cf18d49c.js.map": "/react-bulgern-portfolio/static/js/main.cf18d49c.js.map",
     "787.efdb83c2.chunk.js.map": "/react-bulgern-portfolio/static/js/787.efdb83c2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4797540d.css",
-    "static/js/main.94fc90d2.js"
+    "static/js/main.cf18d49c.js"
   ]
 }
