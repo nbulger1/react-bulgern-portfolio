@@ -10,6 +10,7 @@ const styles = {
     display: "flex",
     flexWrap: "wrap",
     justifyContent: "space-evenly",
+    alignItems: "center",
   },
 
   contactLink: {

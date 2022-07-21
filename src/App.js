@@ -1,5 +1,4 @@
-import "./App.css";
-import React from "react";
+import { useEffect, useState } from "react";
 import PortfolioContainer from "./components/PortfolioContainer";
 import Footer from "./components/Footer";
 
@@ -23,6 +22,12 @@ const styles = {
 };
 
 function App() {
+  const [title, setTitle] = useState("Bulger Portfolio");
+  useEffect(() => {
+    // This will run when the page first loads and whenever the title changes
+    document.title = title;
+  }, [title]);
+
   return (
     <div className="react-portfolio-app" style={styles.fullApp}>
       <div style={styles.contentWrapper}>
