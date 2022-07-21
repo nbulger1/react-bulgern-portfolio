@@ -96,7 +96,6 @@ function Form() {
     setErrorMessageName("");
     setErrorMessageEmail("");
     setErrorMessageMessage("");
-    alert(`Thank you for your message! Natalie will get back to you soon!`);
   };
 
   return (
@@ -149,11 +148,6 @@ function Form() {
           Submit
         </button>
       </form>
-      {/* {errorMessage && (
-        <div>
-          <p className="error-text">{errorMessage}</p>
-        </div>
-      )} */}
     </div>
   );
 }
