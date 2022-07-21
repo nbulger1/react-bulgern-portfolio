@@ -26,7 +26,7 @@ function App() {
   useEffect(() => {
     // This will run when the page first loads and whenever the title changes
     document.title = title;
-  }, [title]);
+  });
 
   return (
     <div className="react-portfolio-app" style={styles.fullApp}>
